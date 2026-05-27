@@ -1,0 +1,78 @@
+;<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+      /* Course List */
+      .course-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .course-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: calc(90% - 20px);
+        box-sizing: border-box;
+         display: block;
+       text-decoration: none;
+        color: inherit;
+       transition: 0.2s;
+        
+      }
+
+
+      .course-card h2 {
+        margin-top: 0;
+      }
+      .course-card:hover {
+    transform: scale(1.02);
+    background-color: #f5f5f5;
+}
+
+
+    </style>
+</head>
+<body>
+    <!--Topbar-->
+  <div class="topbar">
+    <div>Binusmaya | Learning Management System</div>
+
+    <div style="display:flex; gap:20px; align-items:center;">
+      <div>🔔</div>
+      <div class="profile"></div>
+    </div>
+  </div>
+<!--Sidebar-->
+  <div class="sidebar">
+    <div class="role"> 
+      <h3>Role</h3>
+      <p id ="Role">Student</p>
+    </div>
+    
+    
+    <button onclick="location.href='dashboard.html'" class="course-btn">Dashboard</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn" style="background-color: #56c7f7; padding-left: 24px;">Course</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Assignments</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Calendar</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Messages</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Resources</button>
+  </div>
+
+  <div class="main">
+    <h1 id="List" style="margin-bottom: 40px;">Course List</h1>
+    <div class="course-list" id="course-list">
+      <!-- Course cards will be generated here -->
+    </div>
+  </div>
+  <script src="Scripts/variablecontainer.js"></script>
+  <script src="Scripts/coursescript.js"></script>
+    
+</body>
+</html>

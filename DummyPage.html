@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .return-btn{
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: rgb(227, 112, 12);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .return-btn:hover {
+      background-color: rgb(200, 90, 0);
+    }
+    </style>
+</head>
+
+<body>
+    <!--Topbar-->
+  <div class="topbar">
+    <div>Binusmaya | Learning Management System</div>
+
+    <div style="display:flex; gap:20px; align-items:center;">
+      <div>🔔</div>
+      <div class="profile"></div>
+    </div>
+  </div>
+<!--Sidebar-->
+  <div class="sidebar">
+    <div class="role"> 
+      <h3>Role</h3>
+      <p id ="Role">Student</p>
+    </div>
+    
+    
+    <button onclick="location.href='dashboard.html'"class="course-btn">Dashboard</button>
+    <button onclick="location.href='courses.html'" class="course-btn">Course</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Assignments</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Calendar</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Messages</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Resources</button>
+  </div>
+
+<div class="main">
+    <h1>Dummy Page</h1>
+    <p>This is a dummy page for testing purposes.</p>
+    <p>Click the button below to return to the dashboard.</p>
+    <button onclick="location.href='dashboard.html'" class="return-btn">Return to Dashboard</button>
+</div>
+
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+    .card{
+    margin-top: 20px;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      width: calc(90% - 20px);
+      box-sizing: border-box;
+       display: block;
+      
+
+    }
+
+    .session-title{
+      margin-top: 0;
+    }
+
+    .session-description{
+        margin-top: 20px;
+      font-size: 16px;
+      
+    }
+
+    .attend-btn{
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: rgb(227, 112, 12);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .orange-text{
+  font-weight: bold;
+  color: rgb(227, 112, 12);
+}
+
+.attend-btn:hover {
+      background-color: rgb(200, 90, 0);
+    }
+    </style>
+
+
+
+</head>
+
+
+
+
+<body>
+    <!--Topbar-->
+  <div class="topbar">
+    <div>Binusmaya | Learning Management System</div>
+
+    <div style="display:flex; gap:20px; align-items:center;">
+      <div>🔔</div>
+      <div class="profile"></div>
+    </div>
+  </div>
+<!--Sidebar-->
+  <div class="sidebar">
+    <div class="role"> 
+      <h3>Role</h3>
+      <p id ="Role">Student</p>
+    </div>
+    <button onclick="location.href='dashboard.html'" class="course-btn">Dashboard</button>
+    <button onclick="location.href='courses.html'" class="course-btn">Course</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Assignments</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Calendar</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Messages</button>
+    <button onclick="location.href='DummyPage.html'" class="course-btn">Resources</button>
+  </div>
+
+
+  <div class="main">
+    <div class="course-header">
+    <a href="calculus.html" class="orange-text"><h3>Return to Course</h3></a>
+    <h1>Calculus</h1>
+    <p>MATH101 • Prof. John Doe</p>
+  </div>
+    <div class="card">
+      <h1 class="session-title">Derivatives</h1>
+      <h3>May 24, 2026</h3>
+      <p class="session-description">In this session, we will explore the concept of derivatives in calculus. We will learn how to calculate derivatives of various functions and understand their geometric interpretation as the slope of the tangent line. Additionally, we will discuss the rules of differentiation and their applications in solving real-world problems.</p>
+    
+      <button onclick="takeAttendance()" class="attend-btn">Take Attendance</button>
+    </div>
+
+    
+
+
+  </div>
+</body>
+<script>
+function takeAttendance() {
+  alert("Attendance has been taken for this session :D");
+}
+</script>
+</html>
