@@ -2,7 +2,7 @@ Instructions:
 
 
 
-**Note: This is only built for PC \& Laptop and not Mobile Devices, you can actually try, but I didn't adjust to a mobile viewport**
+**Note: This is only built for PC \& Laptop and not Mobile Devices. Technically you can use a mobile device, but it will look weird**
 
 
 
